@@ -20,6 +20,8 @@ public class Cluster {
     private List<ClusterItem> mClusterItems;
     private Marker mMarker;
 
+    public boolean isNormalMarker;
+
 
     Cluster( LatLng latLng) {
 
@@ -51,5 +53,14 @@ public class Cluster {
 
     List<ClusterItem> getClusterItems() {
         return mClusterItems;
+    }
+
+    @Override
+    public String toString() {
+        return "Cluster{" +
+                "mLatLng=" + mLatLng +
+                ", mClusterItems=" + mClusterItems +
+                ", mMarker=" + mMarker +
+                '}';
     }
 }
